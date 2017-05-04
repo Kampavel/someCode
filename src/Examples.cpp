@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string.h>
 #include <map>
 #include <list>
 
@@ -15,7 +14,6 @@ map<int, list<int> > function(int N) {
         multimap<int, list<int> >::iterator it;
 
         buffer.push_back(2);
-
         numbers.insert(pair<int, list<int> >(2, buffer));
 
         for (int var = 3; var < N + 1; ++var) {
@@ -34,10 +32,8 @@ map<int, list<int> > function(int N) {
             }
         }
     } else {
-
         numbers[0].push_back(0);
     }
-
     return numbers;
 }
 
